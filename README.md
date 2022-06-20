@@ -4,7 +4,7 @@
 
 Fine fine lys!
 
-![picture of neopixels](/static/tutorials/neopixelring.gif)
+![picture of neopixels](/static/neopixelring.gif)
 
 ```template
 let strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
