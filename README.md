@@ -1,10 +1,10 @@
 # Intro til NeoPixel-lys
 
-## Hva er NeoPixler? @unplugged
+## Hva er NeoPixler? @showhint
 
 Fine fine lys!
 
-![picture of neopixels](/static/neopixelring.gif)
+![picture of neopixels](/static/tutorials/neopixelring.gif)
 
 ```template
 let strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
