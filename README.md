@@ -1,6 +1,6 @@
 # Intro til NeoPixel-lys
 
-## Hva er NeoPixler? @showhint
+## Hva er NeoPixler? @unplugged
 
 Fine fine lys!
 
