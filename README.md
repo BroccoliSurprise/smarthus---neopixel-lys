@@ -16,7 +16,7 @@ strip.showColor(neopixel.colors(NeoPixelColors.Blue))
 
 ## Hvordan koble lysene til micro:biten @showhint
 
-![picture of connecting wires](/.docs/static/tutorials/neopixelwires.png)
+![picture of connecting wires](/.docs/static/tutorials/neopixel-ledninger.jpg)
 Fra høyre til venstre skal det være svart, rød, og så hvit.
 
 
