@@ -4,7 +4,7 @@
 
 Fine fine lys!
 
-![picture of neopixels](/static/tutorials/neopixelring.gif)
+![picture of neopixels](/.docs/static/tutorials/neopixelring.gif)
 
 Inni hvert piksel er en mikroprosessor som kan styre farge og lysstyrke. 
 Med riktige kommandoer går det an å lage vakre fargemønstre.
