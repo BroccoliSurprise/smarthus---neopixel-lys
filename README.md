@@ -16,7 +16,7 @@ strip.showColor(neopixel.colors(NeoPixelColors.Blue))
 
 ## Hvordan koble lysene til micro:biten @showhint
 
-![picture of connecting wires](/static/tutorials/neopixelwires.jpg)
+![picture of connecting wires](/.docs/static/tutorials/neopixelwires.jpg)
 
 ## Last ned koden
 
