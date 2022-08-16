@@ -78,6 +78,6 @@ strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
 strip.show()
 basic.forever(function () {
 })
-
+```
 
 
