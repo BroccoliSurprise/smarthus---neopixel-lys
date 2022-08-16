@@ -27,7 +27,7 @@ Fra høyre til venstre skal det være svart på **GND**, rød på **3V**, og så
 
 Last ned eksempel-programmet til micro:biten og sjekk om det blir liv i lysene.
 
-```template
+```blocks
 let strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
 strip.showColor(neopixel.colors(NeoPixelColors.Blue))
 ```
@@ -39,18 +39,35 @@ Hvis det ble lys: Hurra! Prøv å endre eksempel-programmet og se om du får til
 
 ## Steg 6 - Analyse av koden @showdialog
 
-Før vi fortsetter kan det være greit å vite hva programmet gjør:
+Før vi fortsetter kan det være greit å fortelle hvordan eksempel-programmet fungerer:
 
-micro:biten vet ikke av seg selv at vi har koblet LEDlys til den, vi må fortelle den det med kode.
+micro:biten skjønner ikke av seg selv at vi har koblet LEDlys til den, vi må gjøre den oppmerksom på dette med kode.
 
-I den første blokken lager vi en variabel som heter "strip", som forteller micro:biten hvilken utgang signalene skal sendes til (P2), hvor mange lys som er koblet i ledningen (5), og hvilken type lys-signaler som skal sendes (RGB).
+I den første blokken lager vi en variabel som får navnet "strip", som inneholder informasjonen micro:biten trenger: Hvilken utgang signalene skal sendes til (P2), hvor mange lys som er koblet i ledningen (5), og hvilken type lys-signaler som skal sendes (RGB).
 
 Når vi har gjort det, kan vi kjøre NeoPixel-kommandoer fra menyen og si at de skal gjelde på lyslenken som heter "strip".
 
-Det ligger veldig mye avansert kode under panseret på disse blokkene, men vi trenger heldigvis ikke å vite alle detaljene for å kunne bruke de.
-
 
 ## Steg 7 -- Kule greier
+Eksempel 2 - Interaktive lys
+
+Last ned programmet under og trykk på "A"-knappen på micro:biten. Hva skjer når du trykker på "A"-knappen?
+
+Eksperimenter med å endre på verdiene (tall, farger osv) i programmet. 
+
+
+```blocks
+let strip: neopixel.Strip = null
+strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
+strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
+strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
+strip.setPixelColor(4, neopixel.colors(NeoPixelColors.Yellow))
+strip.show()
+
+input.onButtonPressed(Button.A, function () {
+    strip.rotate(1)
+    strip.show()
+})
 
 <!---
 
