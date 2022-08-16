@@ -1,5 +1,10 @@
 # Intro til NeoPixel-lys
 
+```template
+let strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
+strip.showColor(neopixel.colors(NeoPixelColors.Blue))
+```
+
 ## Steg 1 - Hva er NeoPixler? @showdialog
 
 Fine fine lys!
@@ -49,29 +54,30 @@ Når vi har gjort det, kan vi kjøre NeoPixel-kommandoer fra menyen og si at de 
 
 
 ## Steg 7 -- Kule greier
-Eksempel 2 - Interaktive lys
 
-Last ned programmet under og trykk på "A"-knappen på micro:biten. Hva skjer når du trykker på "A"-knappen?
+I Neopixel-menyen til venstre finner du et knippe kommandoblokker som er fine å starte med. 
 
-Eksperimenter med å endre på verdiene (tall, farger osv) i programmet. 
+Oppdrag: Bruk noen minutter på å pusle sammen blokkene på ulike måter, og lag *kjempefine farger*
 
+Når du føler deg fornøyd, kan du trykke på "Avslutt / Finish" for å gå tilbake til vanlig MakeCode med flere blokker.
 
-```blocks
-let strip: neopixel.Strip = null
-strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
+```ghost
+input.onButtonPressed(Button.A, function () {
+    basic.pause(100)
+})
+let strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
+strip.clear()
 strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
 strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
 strip.setPixelColor(4, neopixel.colors(NeoPixelColors.Yellow))
 strip.show()
-
-input.onButtonPressed(Button.A, function () {
-    strip.rotate(1)
-    strip.show()
+basic.pause(100)
+strip.rotate(1)
+strip.showRainbow(1, 360)
+strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
+strip.show()
+basic.forever(function () {
 })
 
-<!---
 
-// https://makecode.microbit.org/#tutorial:https://broccolisurprise.github.io/smarthus---neopixel-lys/
-
-// Open this page at [https://broccolisurprise.github.io/smarthus---neopixel-lys/](https://broccolisurprise.github.io/smarthus---neopixel-lys/)
 
