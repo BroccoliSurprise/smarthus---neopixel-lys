@@ -1,6 +1,6 @@
 # Intro til NeoPixel-lys
 
-## Hva er NeoPixler? @unplugged
+## Steg 1 - Hva er NeoPixler? @showdialog
 
 Fine fine lys!
 
@@ -9,31 +9,35 @@ Fine fine lys!
 Inni hvert piksel er en mikroprosessor som kan styre farge og lysstyrke. 
 Med riktige kommandoer går det an å lage vakre fargemønstre.
 
+
+
+## Steg 2 -  Trekk ut USB-ledningen før du begynner å koble! @showdialog
+**Viktig! Les dette før du begynner**  
+
+Utstyret kan bli ødelagt om ledningene sklir eller kortslutter, så vær **helt** sikker på at det ikke er strøm i systemet når du skal koble til eller fra noe.
+
+## Steg 3 -  Hvordan koble lysene til micro:biten 
+
+![bilde av ledninger koblet på microbit](https://d14xnrffmhx4ml.cloudfront.net/1660675040/smarthus-veiledning-neopixel-ledninger.jpg)
+
+Fra høyre til venstre skal det være svart på **GND**, rød på **3V**, og så hvit på **2**.
+
+
+## Steg 4 -  Last ned koden
+
+Last ned eksempel-programmet til micro:biten og sjekk om det blir liv i lysene.
+
 ```template
 let strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
 strip.showColor(neopixel.colors(NeoPixelColors.Blue))
 ```
 
-## Trekk ut USB-ledningen før du begynner å koble! @unplugged
+## Steg 5 - Flott! 
 
-Utstyret kan bli ødelagt om ledningene sklir eller kortslutter, så vær helt sikker på at det ikke er strøm i systemet når du skal koble til eller fra noe.
-
-## Hvordan koble lysene til micro:biten 
-
-![bilde av ledninger koblet på microbit](https://d14xnrffmhx4ml.cloudfront.net/1660675040/smarthus-veiledning-neopixel-ledninger.jpg)
-
-Fra høyre til venstre skal det være svart, rød, og så hvit.
+Hvis det ble lys: Hurra! Prøv å endre eksempel-programmet og se om du får til å endre fargen på lysene.
 
 
-## Last ned koden
-
-Last ned koden til micro:biten og sjekk om det blir liv i lysene.
-
-## Flott! 
-
-Hvis det ble lys: Hurra! Se om du får til å skifte fargen på lyset.
-
-## Analyse av koden
+## Steg 6 - Analyse av koden @showdialog
 
 Før vi fortsetter kan det være greit å vite hva programmet gjør:
 
@@ -44,6 +48,9 @@ I den første blokken lager vi en variabel som heter "strip", som forteller micr
 Når vi har gjort det, kan vi kjøre NeoPixel-kommandoer fra menyen og si at de skal gjelde på lyslenken som heter "strip".
 
 Det ligger veldig mye avansert kode under panseret på disse blokkene, men vi trenger heldigvis ikke å vite alle detaljene for å kunne bruke de.
+
+
+## Steg 7 -- Kule greier
 
 <!---
 
