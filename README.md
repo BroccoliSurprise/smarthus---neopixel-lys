@@ -4,7 +4,7 @@
 
 Fine fine lys!
 
-![picture of neopixels](/.docs/static/tutorials/neopixelring.gif)
+![animert gif av neopixelring](https://d14xnrffmhx4ml.cloudfront.net/1660675041/smarthus-veiledning-neopixelring.gif)
 
 Inni hvert piksel er en mikroprosessor som kan styre farge og lysstyrke. 
 Med riktige kommandoer går det an å lage vakre fargemønstre.
@@ -20,7 +20,7 @@ Utstyret kan bli ødelagt om ledningene sklir eller kortslutter, så vær helt s
 
 ## Hvordan koble lysene til micro:biten 
 
-![picture of connecting wires](/.docs/static/tutorials/neopixel-ledninger.jpg)
+![bilde av ledninger koblet på microbit](https://d14xnrffmhx4ml.cloudfront.net/1660675040/smarthus-veiledning-neopixel-ledninger.jpg)
 
 Fra høyre til venstre skal det være svart, rød, og så hvit.
 
