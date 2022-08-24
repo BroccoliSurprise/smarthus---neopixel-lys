@@ -60,3 +60,19 @@ I Neopixel-menyen til venstre finner du et knippe kommandoblokker som er fine å
 Oppdrag: Bruk noen minutter på å pusle sammen blokkene på ulike måter, og lag *kjempefine farger*.
 
 Når du føler deg fornøyd, kan du trykke på "Avslutt / Finish" for å gå tilbake til vanlig MakeCode med flere blokker.
+
+```ghost
+let strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
+strip.shift(1)
+strip.rotate(1)
+strip.setPixelColor(0, neopixel.rgb(255, 255, 255))
+strip.show()
+strip.clear()
+basic.forever(function () {
+	
+})
+basic.forever(function () {
+    basic.pause(100)
+})
+
+```
