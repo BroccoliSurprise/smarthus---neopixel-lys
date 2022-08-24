@@ -60,25 +60,3 @@ I Neopixel-menyen til venstre finner du et knippe kommandoblokker som er fine å
 Oppdrag: Bruk noen minutter på å pusle sammen blokkene på ulike måter, og lag *kjempefine farger*.
 
 Når du føler deg fornøyd, kan du trykke på "Avslutt / Finish" for å gå tilbake til vanlig MakeCode med flere blokker.
-
-
-```ghost
-input.onButtonPressed(Button.A, function () {
-    basic.pause(100)
-})
-let strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
-strip.clear()
-strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
-strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
-strip.setPixelColor(4, neopixel.colors(NeoPixelColors.Yellow))
-strip.show()
-basic.pause(100)
-strip.rotate(1)
-strip.showRainbow(1, 360)
-strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
-strip.show()
-basic.forever(function () {
-})
-```
-
-
