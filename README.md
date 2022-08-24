@@ -21,7 +21,7 @@ Med riktige kommandoer går det an å lage vakre fargemønstre.
 
 Utstyret kan bli ødelagt om ledningene sklir eller kortslutter, så vær **helt** sikker på at det ikke er strøm i systemet når du skal koble til eller fra noe.
 
-## Steg 3 -  Hvordan koble lysene til micro:biten 
+## Steg 3 -  Hvordan koble lysene til micro:biten @showdialog
 
 ![bilde av ledninger koblet på microbit](https://d14xnrffmhx4ml.cloudfront.net/1660675040/smarthus-veiledning-neopixel-ledninger.jpg)
 
