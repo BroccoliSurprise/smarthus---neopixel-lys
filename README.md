@@ -7,7 +7,7 @@ strip.showColor(neopixel.colors(NeoPixelColors.Blue))
 
 ## Steg 1 - Hva er NeoPixler? @showdialog
 
-Fine fine lys!
+NeoPixler er en av mange ulike typer programmerbare LED-lys. 
 
 ![animert gif av neopixelring](https://d14xnrffmhx4ml.cloudfront.net/1660675041/smarthus-veiledning-neopixelring.gif)
 
@@ -25,7 +25,7 @@ Utstyret kan bli ødelagt om ledningene sklir eller kortslutter, så vær **helt
 
 ![bilde av ledninger koblet på microbit](https://d14xnrffmhx4ml.cloudfront.net/1660675040/smarthus-veiledning-neopixel-ledninger.jpg)
 
-Fra høyre til venstre skal det være svart på **GND**, rød på **3V**, og så hvit på **2**.
+Fra høyre til venstre skal det være svart på **GND**, rød på **3V**, og så hvit/gul på **2**.
 
 
 ## Steg 4 -  Last ned koden
@@ -39,7 +39,7 @@ strip.showColor(neopixel.colors(NeoPixelColors.Blue))
 
 ## Steg 5 - Flott! 
 
-Hvis det ble lys: Hurra! Prøv å endre eksempel-programmet og se om du får til å endre fargen på lysene.
+Hvis det ble lys: Hurra! Prøv å forandre fargen på lysene.
 
 
 ## Steg 6 - Analyse av koden @showdialog
@@ -57,9 +57,10 @@ Når vi har gjort det, kan vi kjøre NeoPixel-kommandoer fra menyen og si at de 
 
 I Neopixel-menyen til venstre finner du et knippe kommandoblokker som er fine å starte med. 
 
-Oppdrag: Bruk noen minutter på å pusle sammen blokkene på ulike måter, og lag *kjempefine farger*
+Oppdrag: Bruk noen minutter på å pusle sammen blokkene på ulike måter, og lag *kjempefine farger*.
 
 Når du føler deg fornøyd, kan du trykke på "Avslutt / Finish" for å gå tilbake til vanlig MakeCode med flere blokker.
+
 
 ```ghost
 input.onButtonPressed(Button.A, function () {
