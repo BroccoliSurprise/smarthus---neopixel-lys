@@ -44,13 +44,10 @@ Hvis det ble lys: Hurra! Prøv å forandre fargen på lysene.
 
 ## Steg 6 - Analyse av koden @showdialog
 
-Før vi fortsetter kan det være greit å fortelle hvordan eksempel-programmet fungerer:
+Det vi har gjort nå, er å legge inn kode som forklarer micro:biten at den er koblet til en NeoPixel-stripe:
 
-micro:biten skjønner ikke av seg selv at vi har koblet LEDlys til den, vi må gjøre den oppmerksom på dette med kode.
-
-I den første blokken lager vi en variabel som får navnet "strip", som inneholder informasjonen micro:biten trenger: Hvilken utgang signalene skal sendes til (P2), hvor mange lys som er koblet i ledningen (5), og hvilken type lys-signaler som skal sendes (RGB).
-
-Når vi har gjort det, kan vi kjøre NeoPixel-kommandoer fra menyen og si at de skal gjelde på lyslenken som heter "strip".
+![forklaringsbilde av NeoPixel-koden](https://d14xnrffmhx4ml.cloudfront.net/1661764818/smarthus-veiledning-neopixel-forklaring.png)
+Fra nå av, hver gang vi sier at det skal skje noe med variabelen "strip", vet programmet at det er lyslenken på P2 med 5 lys vi mener.
 
 
 ## Steg 7 -- Kule greier
